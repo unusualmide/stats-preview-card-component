@@ -37,6 +37,22 @@
 }
 
 
+.kenburns-top-right {
+	        animation: kenburns-top-right 5s ease-out both;
+}
+
+ @-webkit-keyframes kenburns-top-right {
+    0% {
+              transform: scale(1) translate(0, 0);
+              transform-origin: 84% 16%;
+    }
+    100% {
+              transform: scale(1.25) translate(20px, -15px);
+              transform-origin: right top;
+    }
+  }
+  
+
 
 .text-accent{
     color: hsl(277, 64%, 61%);
@@ -46,3 +62,7 @@
     color:hsla(0, 0%, 100%, 0.75);
 }
 
+
+.line-h{
+    line-height: 1.4rem;
+}
