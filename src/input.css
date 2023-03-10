@@ -4,6 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base{
 .text-lexend{
     font-family: 'Lexend Deca', sans-serif;  
     font-family: 'Inter', sans-serif;
@@ -13,45 +14,12 @@
     background-color: hsl(233, 47%, 7%);
 }
 
+}
+
+@layer components{
 .saturated-blue{
     background-color: hsl(244, 38%, 16%);
 }
-
-.bg-accent{
-    background-image: url(../build/images/image-header-desktop.jpg);
-    position: relative;
-    
-    
-}
-
-.bg-accent::after{
-    content: "";
-    background-color: hsl(277, 81%, 51%);
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 1;
-    opacity: 60%;
-}
-
-
-.kenburns-top-right {
-	        animation: kenburns-top-right 5s ease-out both;
-}
-
- @-webkit-keyframes kenburns-top-right {
-    0% {
-              transform: scale(1) translate(0, 0);
-              transform-origin: 84% 16%;
-    }
-    100% {
-              transform: scale(1.25) translate(20px, -15px);
-              transform-origin: right top;
-    }
-  }
-  
 
 
 .text-accent{
@@ -61,8 +29,4 @@
 .transparent-white{
     color:hsla(0, 0%, 100%, 0.75);
 }
-
-
-.line-h{
-    line-height: 1.4rem;
 }
